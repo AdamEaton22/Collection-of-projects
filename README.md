@@ -33,4 +33,11 @@ This is a project I am still working on, and there are many things that can be i
 The next steps are to see if this model works on the MNIST database of handwritten numbers. The model would receive an input of 28x28 (one for each pixel value) and output 10 nodes. This would require a large number of modes, so my approach may need to be optimised before attempting this. For example, I could make use of threading.
 
 
+**Aim trainer**
+
+This is a program I wrote as I was frustrated at having a low mouse speed when playing online chess. I then added additional features until it became a program my friends would use over other aim trainers. 
+The link to the source code is https://editor.p5js.org/Adsa2/sketches/lrpPC4nIt.
+
+
+
 
