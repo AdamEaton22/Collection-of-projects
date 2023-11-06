@@ -31,7 +31,7 @@ I found this project extremely satisfying and learnt a lot about how neural netw
 As well as the main neural network, I have included a crude display of the model learning to predict if a point is above or below a line.
 This is a project I am still working on, and there are many things that can be improved. For example, training batches does not seem to train the model and I think I need to rethink the approach with multiple inputs per batch. In addition, the visual representation shows that often the outputs look quite linear and therefore struggles to match a curved output. I could experiment with other activation functions and try larger modes with more hidden layers (although these seem to be harder to train and sometimes stop learning with the current implementation). The model also seems very susceptible to changes in the learn rate, which is just chosen to a value that seemed to give good results. It would be good to have a way to determining a good value for this.
 
-The next steps are to see if this model works on the MNIST database of handwritten numbers. The model would receive an input of 28x28 (one for each pixel value) and output 10 nodes. This would require a large number of modes, so my approach may need to be optimised before attempting this.
+The next steps are to see if this model works on the MNIST database of handwritten numbers. The model would receive an input of 28x28 (one for each pixel value) and output 10 nodes. This would require a large number of modes, so my approach may need to be optimised before attempting this. For example, I could make use of threading
 
 
 
