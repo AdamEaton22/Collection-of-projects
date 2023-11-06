@@ -23,3 +23,15 @@ This is a program I wrote in my first year at university as I was interested in 
 
 - remove continual evaluation of the same position. Since the game is extremely simple, there is no max depth limit so the whole game tree is computed on move 1. This could just be pre-processed and stored, and then the computer could look-up the best move in that position for each of its goes. This approach is used in connect 4 and also simple chess endgames (tablebase)
 
+
+**Neural network**
+
+I have found I have a great interest in neural networks, and after attending a demonstration where a library was used to train a model, I decided to try to build my own without any additional libraries (except for numpy, which I use to multiply matrices). My plan was to try to discover how to code one myself, without resorting to using online material. However, I still knew the basic idea behind back propagation and how the weights and biases combine with an activation function to produce a non-linear output.
+I found this project extremely satisfying and learnt a lot about how neural networks work. After spending a while working out the calculus of back propagation, I was thrilled when the model started to learn and increase its accuracy.
+As well as the main neural network, I have included a crude display of the model learning to predict if a point is above or below a line.
+This is a project I am still working on, and there are many things that can be improved. For example, training batches does not seem to train the model and I think I need to rethink the approach with multiple inputs per batch. In addition, the visual representation shows that often the outputs look quite linear and therefore struggles to match a curved output. I could experiment with other activation functions and try larger modes with more hidden layers (although these seem to be harder to train and sometimes stop learning with the current implementation). The model also seems very susceptible to changes in the learn rate, which is just chosen to a value that seemed to give good results. It would be good to have a way to determining a good value for this.
+
+The next steps are to see if this model works on the MNIST database of handwritten numbers. The model would receive an input of 28x28 (one for each pixel value) and output 10 nodes. This would require a large number of modes, so my approach may need to be optimised before attempting this.
+
+
+
